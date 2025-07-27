@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The City of Ruby</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#111, #333), url('/assets/background.png') no-repeat center center fixed;
+      background-blend-mode: overlay;
+      background-size: cover;
+      color: #eee;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .titlebar {
+      background: rgba(20,20,20,0.7);
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      backdrop-filter: blur(6px);
+    }
+
+    .titlebar img {
+      max-height: 140px;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: rgba(30,30,30,0.85);
+      padding: 12px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .topnav a {
+      color: #ccc;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 15px;
+      transition: background 0.25s;
+    }
+
+    .topnav a:hover {
+      background: #ffffff33;
+      color: #fff;
+    }
+
+    .topnav a.active {
+      background-color: #0fae88;
+      color: #fff;
+    }
+
+    .prettypara {
+      background: rgba(25,25,25,0.85);
+      padding: 40px 30px;
+      border-radius: 14px;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    .prettypara p {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .topnav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .topnav a {
+        width: 100%;
+        text-align: center;
+      }
+      .titlebar img {
+        max-height: 90px;
+      }
+      .prettypara {
+        padding: 25px 15px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="titlebar">
+      <img src="/assets/logo.png" alt="City Logo">
+    </header>
+    <nav class="topnav">
+      <a class="active" href="/index.html">Home</a>
+      <a href="pages/news.html">News</a>
+      <a href="pages/plots.html">Plots</a>
+      <a href="pages/gallery.html">Gallery</a>
+      <a href="pages/directory.html">Plot Directory</a>
+      <a href="pages/boardmembers.html">Project Members</a>
+      <a href="pages/laws.html">Rules & Guides</a>
+      <a href="pages/devstage.html">Development Info</a>
+    </nav>
+
+    <section class="prettypara">
+      <p>
+        Welcome to the City Project Portal! Explore the latest updates, check detailed plots,
+        and stay connected with our growing community. This portal grows as the city grows. 🌆
+      </p>
+    </section>
+  </div>
+</body>
+</html>
