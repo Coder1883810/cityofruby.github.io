@@ -1,0 +1,16 @@
+=============================
+LUANTI RUBY ALPHA 6 VERSION 1
+=============================
+
+- Completed working Alpha for Project Members page
+- Started on Development Info page, made template.
+- Patched PHP bug, which bricked the whole thing.
+- Created UI Adjustments, such as adding a navigation bar to every page.
+- Added button that takes user back to the homepage after registering for a plot.
+- Patched Navigation bar from always showing "Home" as selected.
+- Changed "plotrequests.php" to "plotrequests.txt" to make things more flexible
+- Fixed UI discoloration on some pages, not all.
+- Patched major security issue in webserver organization.
+- Testing different PHP methods
+
+All features are subject to change, this is not a stable version.
